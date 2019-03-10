@@ -1,0 +1,52 @@
+{
+    "portafolio" : [
+        {
+            "id" : 1,
+            "nombre" : "Airbnb",
+            "link": "https://awesome-northcutt-02dc21.netlify.com/",
+            "desc" : "Un pequeño clon del homepage de airbnb con algún estilo propio."
+        },
+        {
+            "id" : 2,
+            "nombre" : "Sitio Web",
+            "link": "https://nervous-mayer-ce1dff.netlify.com/",
+            "desc" : "Una Website para una Escuela de Cocina."
+        },
+        {
+            "id" : 3,
+            "nombre" : "Sitio Web",
+            "link": "https://stoic-bassi-875fb0.netlify.com/",
+            "desc" : "Un sitio web para un Spa, con diferentes enlaces a nuevas secciones."
+        },
+        {
+            "id" : 4,
+            "nombre" : "Sitio Web",
+            "link": "https://vigorous-spence-96fd06.netlify.com/",
+            "desc" : "Un sitio web de cursos en línea, usando un efecto de masonry"
+        },
+        {
+            "id" : 5,
+            "nombre" : "Fiverr",
+            "link": "https://lucid-cori-ba0aa0.netlify.com/",
+            "desc" : "Un pequeño clon de fiverr, la website para freelancer."
+        },
+        {
+            "id" : 6,
+            "nombre" : "REST API",
+            "link": "https://suspicious-austin-662980.netlify.com/",
+            "desc" : "Una SPA usando el API de Evenbrite"
+        },
+        {
+            "id" : 7,
+            "nombre" : "REST API",
+            "link": "https://suspicious-austin-662980.netlify.com/",
+            "desc" : "Una SPA usando el API de Evenbrite"
+        },
+        {
+            "id" : 8,
+            "nombre" : "REST API",
+            "link": "https://suspicious-austin-662980.netlify.com/",
+            "desc" : "Una SPA usando el API de Evenbrite"
+        }
+    ]
+}
