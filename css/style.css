@@ -253,6 +253,10 @@ p {
 .sociales ul li a[href*='twitter.com']::before {
     content: "\f099";
 }
+
+.sociales ul li a[href*='github.com']::before {
+    content: "\f09b";
+}
 .sociales ul li a[href*='youtube.com']::before {
     content: "\f431";
 }
