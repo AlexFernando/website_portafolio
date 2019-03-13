@@ -28,6 +28,7 @@ h2 {
 }
 h3 {
     font-size: 2.4rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -200,24 +201,91 @@ p {
     margin-top: 2rem;
 }
 
-.footer h3 {
+.footer .contenedor .widget {
+    display: block;
     text-align: center;
 }
 
-.footer p {
-    text-align: justify;
+.footer h3 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: .2rem;
 }
 
-@media (min-width:768px) {
-    .footer .contenedor {
-        display: grid;
-        grid-template-columns: repeat(2,35%) auto;
+.footer h3::before {
+    height: .2rem;
+    width: 5.5rem;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    margin: 1rem 1rem .6rem 0;
+}
+
+.footer h3::after {
+    height: .2rem;
+    width: 5.5rem;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    margin: 1rem 0 .6rem 1rem;
+}
+
+@media(min-width: 768px) {
+    .footer h3 {
+        font-size: 2.4rem;
     }
+
+    .footer h3::before {
+        height: .2rem;
+        width: 20rem;
+        background-color: white;
+        content: '';
+        display: inline-block;
+        margin: 1rem 8rem 1rem 0;
+    } 
+    
+.footer h3::after {
+    height: .2rem;
+    width: 20rem;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    margin: 1rem 0 1rem 8rem;
+}   
 }
 
+
+
+.footer p {
+    text-align: center;
+    margin: 0 0 1.8rem 0;
+    word-spacing: .3rem;
+}
+
+.footer .contact-footer {
+    text-decoration: none;
+    padding: .8rem 2.5rem;
+    background-color: rgba(45, 105, 105, 0.87);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-family: Raleway, serif;
+    text-transform: uppercase;
+    margin: 0 0 1.8rem 0;  
+    transition: background-color .3s ease;
+}
+
+.footer .contact-footer:hover {
+        cursor: pointer;
+        background-color: rgba(131, 224, 220, 0.705);  
+}
 
 /** Redes Socialaes**/
-
+.sociales {
+    margin-top: 3rem;
+}
 .sociales ul {
     display: flex;
     flex-wrap: wrap;
@@ -238,9 +306,9 @@ p {
     margin-right: 0;
 }
 .sociales ul li a {
-    text-decoration: none;
-   
+    text-decoration: none;  
 }
+
 .sociales ul li a:before {
     font-family: "Font Awesome 5 Brands";
     color: var(--claro);
@@ -263,13 +331,39 @@ p {
 .sociales ul li a[href*='instagram.com']::before {
     content: "\f16d";
 }
+.sociales ul li a[href*='gmail.com']::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+}
+
+.sociales ul li {
+    padding: .8rem .8rem;
+    background-color: rgba(45, 105, 105, 0.87);
+    border-radius: 2rem;
+    transition: background-color .4s ease;
+}
+
+.sociales ul li:nth-child(1){
+    padding: .8rem .8rem;
+}
+.sociales ul li:nth-child(2){
+    padding: .8rem 1.2rem;
+}
+
+.sociales ul li:hover {
+    cursor: pointer;
+    background-color: rgba(131, 224, 220, 0.705); 
+}
+
 .sociales ul li a[href*='pinterest.com']::before {
-    content: "\f231 ";
+    content: "\f231";
 }
 .sociales ul li span{
     display: none;
 } 
- 
+
+
+        
   /*3*/
   .view {
     margin: 2rem 0; 
