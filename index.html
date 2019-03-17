@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+     <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="js/app.js"></script>
     <title>AlexFernando</title>
 </head>
 <body>
@@ -23,7 +30,7 @@
             </nav>
         </div>
         <div class="contenedor">
-            <div class="contenido">
+            <div class="contenido-home">
                 <h1 class="titulo">Hello, I'm <span>Alex Fernando.</span><br>I'm a passionate web developer.</h1>
                 <div class="welcome-button">
                     <a href="#" class="contact-home">View my work</a>
@@ -32,39 +39,110 @@
         </div>
      
     </div>
-    <script src="js/app.js"></script>
-    <a href="#" target="_blank"></a>
-    <div class="servicios contenedor">
-            <div class="servicio">
-                <h2>Responsive Design</h2>
-                <i class="fas fa-pencil-alt"></i>
-                <p>My design will work, no matter what device you try on, big or small screen.</p>
-                <div class="otro"></div>
-                <div class="otro1"></div>
-            </div>
 
-            <div class="servicio">
-                <h2>Fast & Intituive</h2>
-                <i class="fas fa-code"></i>
-                    <p>Fast load and easy to use, that's mean lag free and intuitive UX/UI.</p>
-                    <div class="otro"></div>
-                    <div class="otro1"></div>                
-            </div>
+    <section>
+      <h2>About</h2>
+      <div class="servicios contenedor">        
+        <div class="servicio">
+            <i class="fas fa-code"></i>
+            <h3>Design & Programming</h3>
+            <p>I'll build a functional website that fits your product, taking care of details</p>
+        </div>
 
-            <div class="servicio">
-                <h2>Static or Dynamic</h2>
-                <i class="fas fa-shopping-bag"></i>
-                <p>I will help you to choose what fits better to your product.</p>
-                <div class="otro"></div>
-                <div class="otro1"></div>
+        <div class="servicio">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive Design</h3>
+            <p>Your website will work, either in big or small screen.</p>
+        </div>
+
+        <div class="servicio">
+            <i class="fas fa-skiing"></i>
+            <h3>Fast & Intituive</h3>
+                <p>Fast load and easy to use, dynamic and intuitive UX/UI.</p>
+        </div>
+
+      </div>
+      
+      <div class="contenedor skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/image_pro.png" class="me">
+            <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+            <div class="label bold">Who am I?</div>
+            <div class="me-description">
+              I'm a Front-End Developer for, who is constantly learning new technologies and aproaches to make UI/UX better and better.
+              <br>
+              I have passion for creating the best user interfaces for your products.
+              <br>
+              <span class="page-link highlight" dest="contact">Let's work together.</span>
             </div>
-    </div>
+          </div>
+  
+          <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+              <span>80%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:85%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+              <span>90%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">React</div>
+              </div>
+              <span>60%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+              <span>70%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:35%">
+                <div class="tag bold flex">Node.js</div>
+              </div>
+              <span>In progress &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">Python</div>
+              </div>
+              <span>60%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:55%">
+                <div class="tag bold flex">UI Design</div>
+              </div>
+              <span>50%</span>
+            </div>
+  
+            <div class="bar flex">
+              <div class="bar fill" style="width:55%">
+                <div class="tag bold flex">Photoshop</div>
+              </div>
+              <span>50%</span>
+            </div>
+          </div>
+        </div>        
+  </section>
 
     <section id="projects" class="portafolio contenedor">
-        <h2>My Portfolio</h2>
+        <h2>Portfolio</h2>
         <div id="listado" class="listado">
         </div>
     </section>
+
 
     <footer class="footer">
         <div class="contenedor">
