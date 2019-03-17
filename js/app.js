@@ -15,7 +15,7 @@ function cargarPortafolio() {
        datos.portafolio.forEach( portafolio => {
            // crear el template
            html += `   
-           <div class="project-tile view view-tenth elemento">
+           <div class="project-content content-effects elemento">
                 <a href="${portafolio.link}" target="_blank">
                     <img src="img/${portafolio.id}.jpg">
                 </a> 
@@ -43,7 +43,6 @@ function cargarPortafolio() {
   console.log("offset", offset);
   items.each( function() {
     var elem = $(this),
-
         animationClass = elem.attr('data-animation'),
         animationDelay = elem.attr('data-delay');
         console.log("animationClass: ", animationClass);
