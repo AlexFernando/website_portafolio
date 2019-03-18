@@ -1,7 +1,6 @@
 :root {
     --fuentePrincipal:  'Gothic A1', sans-serif;
     --fuenteSecundaria: 'Oswald', sans-serif;
-
     --primario: #f1a94e;
     --secundario: #44b3c2;
     --claro: #ffffff;
@@ -190,7 +189,7 @@ p {
     font-size: 1rem;
     font-weight: 100;
     font-family: Raleway, serif; 
-    transition: background-color .3s ease;
+    transition: background-color .5s ease;
 }
 @media (min-width:768px) {
     font-size: 1.2rem;
@@ -480,7 +479,7 @@ section:nth-of-type(1) .bar .tag {
     background-color: #04C2C9;
     content: '';
     display: block;
-    margin: .3rem auto 0 auto;
+    margin: 1rem auto 0 auto;
 }
 
 .project-content p {
@@ -557,20 +556,26 @@ section:nth-of-type(1) .bar .tag {
 
 /**Footer**/
 .footer {
-    background-image: url(../img/contacto.jpg);
+    background: #7d7e7d; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #292c29  14%, #222629 87%, #222629 92%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #292c29  14%,#222629 87%,#222629 92%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #292c29 14%,#222629 87%,#222629 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#222629',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-repeat: no-repeat;
-    background-size: cover
-    ;
+    background-size: cover;
     color: var(--claro);
     padding: 2rem 0;
     margin-top: 2rem;
-}
-
-.footer .contenedor .widget {
-    display: block;
     text-align: center;
 }
 
+.footer .contenedor .elements {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
 .footer h3 {
     text-align: center;
     margin: 1rem 0;
@@ -615,29 +620,42 @@ section:nth-of-type(1) .bar .tag {
     text-align: center;
     margin: 0 0 1.8rem 0;
     word-spacing: .3rem;
+    grid-column: 1 / 4;
+}
+@media (min-width:768px) {    
+    .footer p {
+        text-align: center;
+        margin: 0 0 1.8rem 0;
+        word-spacing: .3rem;
+        grid-column: 2 / 3;
+    }
 }
 
 .footer .contact-footer {
     text-decoration: none;
-    padding: .8rem 2.5rem;
-    background-color: rgba(45, 105, 105, 0.87);
-    border-radius: 8px;
+    padding: .8rem 2rem;
+    background-color: #222629;    
     color: white;
     font-size: 1rem;
+    font-weight: 500;
     font-family: Raleway, serif;
     text-transform: uppercase;
-    margin: 0 0 1.8rem 0;  
-    transition: background-color .3s ease;
+    border: 2px solid white;
+    border-radius: 4px;
+    transition: background-color 1s ease;
 }
 
 .footer .contact-footer:hover {
         cursor: pointer;
-        background-color: rgba(131, 224, 220, 0.705);  
+        background-color: white;
+        border-color: white;
+        color:#222629;
+        font-weight: 600;
 }
 
 /** Social newtworks footer**/
 .sociales {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .sociales ul {
     display: flex;
@@ -663,7 +681,7 @@ section:nth-of-type(1) .bar .tag {
 }
 .sociales ul li a:before {
     font-family: "Font Awesome 5 Brands";
-    color: var(--claro);
+    color: white;
     font-size: 1.8rem;
 }
 .sociales ul li a[href*='facebook.com']::before {
@@ -681,7 +699,7 @@ section:nth-of-type(1) .bar .tag {
 }
 .sociales ul li {
     padding: .8rem .8rem;
-    background-color: rgba(45, 105, 105, 0.87);
+    background-color: #61892F;
     border-radius: 2rem;
     transition: background-color .4s ease;
 }
@@ -699,4 +717,22 @@ section:nth-of-type(1) .bar .tag {
     display: none;
 } 
 
-      
+
+ .footer .contenedor .copyright {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 4rem;
+ }     
+
+ .footer .contenedor .copyright p {
+     font-size: 1rem;
+     margin-bottom: 0;
+     letter-spacing: .2rem;
+ }
+
+ .footer .contenedor .copyright a {
+    color: #61892F;
+    text-decoration: none;
+ }
