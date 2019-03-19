@@ -1,8 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
     cargarPortafolio();
     setTimeout(function() { onScrollInit($('.waypoint')) }, 100);
-
+    navegacion();
 });
+
+
+function navegacion(){
+        //Inicializar las variables 
+        let i = 0;
+        let tiempo = 0;
+        //boton flotante en el footer
+        const borderMenu = document.querySelector('.border-menu');
+    
+        borderMenu.addEventListener('click', (e) => {
+            e.preventDefault();
+    
+            // Prevenimos default, pero ejecutamos el siguiente código
+    
+            const menuMobile = document.querySelector('#navbar-mobile');
+            console.log(menuMobile.classList, borderMenu.classList);
+    
+            if(menuMobile.classList.contains('activo')) {
+                //Si contiene activo, ejecuta este codigo
+                menuMobile.classList.remove('activo');
+                borderMenu.classList.remove('activo');
+                borderMenu.innerText = '';
+    
+            }
+            else {
+                //Si no lo contiene, ejecuta esto
+                menuMobile.classList.add('activo');
+                borderMenu.classList.add('activo');
+            }
+        })
+}
+
 
 
 function cargarPortafolio() {
@@ -38,15 +70,14 @@ function cargarPortafolio() {
 
    // SCROLL ANIMATIONS
    function onScrollInit( items, elemTrigger ) {
-    console.log("items: ",items,"elemTrigger: ",elemTrigger);
+
   var offset = $(window).height() / 1.6
-  console.log("offset", offset);
+ 
   items.each( function() {
     var elem = $(this),
         animationClass = elem.attr('data-animation'),
         animationDelay = elem.attr('data-delay');
-        console.log("animationClass: ", animationClass);
-        console.log("animationDelay: ", animationDelay);
+  
         elem.css({
           '-webkit-animation-delay':  animationDelay,
           '-moz-animation-delay':     animationDelay,
