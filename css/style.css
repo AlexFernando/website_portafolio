@@ -112,7 +112,6 @@ p {
     background: #222629;
     border-bottom: 2px solid #61892F;
     padding: 2rem;
-    z-index: 100;
   }
   .border-menu:before {
     content: "";
@@ -121,10 +120,12 @@ p {
     height: 0.29em;
     border-top: .75em double #fff;
     border-bottom: 0.25em solid #fff;
-    z-index: 200;
     margin-left: 15rem;
   }
  
+  .border-menu.activo{
+    border-bottom: none;
+  }
 @media (min-width:768px) {
     .border-menu {
         display: none;
@@ -135,7 +136,11 @@ p {
 }
 .hero .navegacion-mobile {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    position: fixed;
+        width: 100%;
+        z-index: 100;
+     
 }
 
 .hero .menu-mobile {
@@ -148,19 +153,24 @@ p {
     padding: 1rem;
     z-index: 100;
     justify-content: flex-end;
-    margin-top: 3.5rem;
+    opacity: 0;
+    margin-top:-2rem;
+    height: 0;
 }
 .hero .menu-mobile.activo {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: #222629;
     border-bottom: 3px solid #61892F;
     padding: 1rem;
     z-index: 100;
     justify-content: flex-end;
-    margin-top: -15rem;
+    margin-top: 3.5rem;
+    opacity: 1;
+    height: 10rem;
+    transition: opacity .2s ease-in;
 }
 
 .hero .menu-mobile a {
@@ -431,7 +441,7 @@ section:nth-of-type(1) .bar.fill {
     top: 0;
     left: 0;
     position: absolute;
-    background-color: rgb(71, 112, 14);;
+    background-color: rgb(71, 112, 14);
     padding: 0;
     opacity: 1; 
 }
@@ -483,6 +493,22 @@ section:nth-of-type(1) .bar .tag {
         grid-row-end: span 2;
     }
 }
+.button-set {
+    margin-bottom: 3rem;
+}
+.button-set .filter-button {
+    padding: .4rem 1rem;
+    background-color:  #292c29;  
+    color: white;
+    border-radius: .3rem;
+}
+
+.button-set .filter-button:hover {
+    cursor: pointer;
+    background-color: rgb(71, 112, 14);   
+    border-color: rgb(71, 112, 14);  
+}
+
  
 /*EACH PROJECT OF PORTFOLIO*/
 .project-content {
@@ -771,7 +797,7 @@ section:nth-of-type(1) .bar .tag {
 .sociales ul li a[href*='github.com/AlexFernando']::before {
     content: "\f09b";
 }
-.sociales ul li a[href*='gmail.com']::before {
+.sociales ul li a[href*='mailto:alex.fernando.801@gmail.com']::before {
     font-family: "Font Awesome 5 Free";
     content: "\f0e0";
 }

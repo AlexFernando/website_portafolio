@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     cargarPortafolio();
     setTimeout(function() { onScrollInit($('.waypoint')) }, 100);
     navegacion();
+    $(function() {  
+        var mixer = mixitup('.container');
+    });
 });
 
 
@@ -44,18 +47,21 @@ function cargarPortafolio() {
    })
    .then(function(datos) {
        let html = ''
+       
        datos.portafolio.forEach( portafolio => {
            // crear el template
-           html += `   
-           <div class="project-content content-effects elemento">
-                <a href="${portafolio.link}" target="_blank">
-                    <img src="img/${portafolio.id}.jpg">
-                </a> 
-                <div class="mask contenido">
-                    <h3>${portafolio.nombre}</h3>
-                    <p>${portafolio.desc}</p>
-                    <a href="${portafolio.link}"  target="_blank" class="info">View Live</a>
-                </div>
+           html += `
+           
+
+           <div class="mix ${portafolio.category} project-content content-effects elemento" data-order="1">            
+                    <a href="${portafolio.link}" target="_blank">
+                        <img src="img/${portafolio.id}.jpg">
+                    </a> 
+                    <div class="mask contenido">
+                        <h3>${portafolio.nombre}</h3>
+                        <p>${portafolio.desc}</p>
+                        <a href="${portafolio.link}"  target="_blank" class="info">View Live</a>
+                    </div>
            </div>
            `;            
        });
