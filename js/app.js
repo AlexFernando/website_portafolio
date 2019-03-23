@@ -1,5 +1,6 @@
+window.addEventListener("hashchange", function() { scrollBy(0, -80) })
+
 document.addEventListener('DOMContentLoaded', function() {
-    cargarPortafolio();
     setTimeout(function() { onScrollInit($('.waypoint')) }, 100);
     navegacion();
     $(function() {  
@@ -37,42 +38,6 @@ function navegacion(){
             }
         })
 }
-
-
-
-function cargarPortafolio() {
-   fetch('datos.json')
-   .then(function(respuesta) {
-       return respuesta.json();
-   })
-   .then(function(datos) {
-       let html = ''
-       
-       datos.portafolio.forEach( portafolio => {
-           // crear el template
-           html += `
-           
-
-           <div class="mix ${portafolio.category} project-content content-effects elemento" data-order="1">            
-                    <a href="${portafolio.link}" target="_blank">
-                        <img src="img/${portafolio.id}.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>${portafolio.nombre}</h3>
-                        <p>${portafolio.desc}</p>
-                        <a href="${portafolio.link}"  target="_blank" class="info">View Live</a>
-                    </div>
-           </div>
-           `;            
-       });
-       // despues de recorrer, lo inyectamos
-       document.querySelector('#listado').innerHTML = html;
-   })
-   .catch(function(error) {
-       console.log(error);
-   });
-}
-
 
    // SCROLL ANIMATIONS
    function onScrollInit( items, elemTrigger ) {
