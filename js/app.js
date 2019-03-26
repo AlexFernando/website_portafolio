@@ -1,15 +1,26 @@
 window.addEventListener("hashchange", function() { scrollBy(0, -80) })
 
+jQuery(document).ready(function() {
+    jQuery(".menu-Trigger").click(function() {
+
+        jQuery(".menu-mobile").slideToggle(100, function() {
+            jQuery(this).toggleClass("nav-Expanded");
+            if($(".menu-mobile").is(":hidden")) $(".menu-Trigger").text("☰ Menu"); else $(".menu-Trigger").text("X Close");
+        });
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() { onScrollInit($('.waypoint')) }, 100);
-    navegacion();
+    //navegacion();
     $(function() {  
         var mixer = mixitup('.container');
     });
 });
 
 
-function navegacion(){
+/*function navegacion(){
         //Inicializar las variables 
         let i = 0;
         let tiempo = 0;
@@ -37,7 +48,7 @@ function navegacion(){
                 borderMenu.classList.add('activo');
             }
         })
-}
+}*/
 
    // SCROLL ANIMATIONS
    function onScrollInit( items, elemTrigger ) {
