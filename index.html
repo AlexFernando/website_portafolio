@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>AlexFernando</title>    
       <!-- CDN -->
@@ -17,12 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
       <!--LOCAL-->
     <script src="js/app.js"></script>
-
+    <script src="js/responsiveslides.min.js"></script>
 </head>
-<body>
-        
-                  
-                
+
+<body>                
         <!--<a href="#menu" class="border-menu">
             <i class="fas fa-bars"></i>
             </a>-->
@@ -30,10 +29,11 @@
                 <span class="menu-Trigger">&#9776; Menu</span>  
                 <nav id="navbar-mobile" class="menu-mobile">
                         <ul>
-                            <li><a href="#welcome-section"><i class="fas fa-home"></i>Home</a></li>
-                            <li><a href="#about"><i class="fas fa-male"></i>About</a></li>
-                            <li><a href="#projects"><i class="fas fa-suitcase"></i>Portfolio</a></li>
-                            <li><a href="#contact"><i class="far fa-envelope"></i>Contact</a></li>
+                            <li><i class="fas fa-home"></i><a href="#welcome-section">Home</a></li>
+                            <li><i class="fas fa-id-card-alt"></i><a href="#about">About</a></li>
+                            <li><i class="fas fa-suitcase"></i><a href="#projects">Portfolio</a></li>
+                            <li><i class="fas fa-suitcase"></i><a href="#gear">Gear</a></li>
+                            <li><i class="far fa-envelope"></i><a href="#contact">Contact</a></li>
                         </ul>
                 </nav>
         </div>
@@ -48,12 +48,13 @@
                 <a href="#welcome-section">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Portfolio</a>
+                <a href="#gear">Gear</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
         <div class="contenedor">
             <div class="contenido-home">
-                <h1 class="titulo">Hello, I'm <span>Alex Fernando.</span><br>I'm a passionate web developer.</h1>
+                <h1 class="titulo">Hello, I'm <span>Alex Fernando.</span><br>I'm a enthusiastic web developer.</h1>
                 <div class="welcome-button">
                     <a href="#projects" class="contact-home">View my work</a>
                 </div>               
@@ -160,125 +161,160 @@
         </div>        
   </section>
 
-    <section id="projects" class="portafolio contenedor">
-      <h2>Portfolio</h2>
-      <div class="button-set">
-        <button type="button" class="filter-button" data-filter="all">All</button>
-        <button type="button" class="filter-button" data-filter=".css">Css Flexbox & Grid</button>
-        <button type="button" class="filter-button" data-filter=".Bootstrap">Bootstrap 4</button>
-        <button type="button" class="filter-button" data-filter=".React">React JS</button>
-      </div>
-      
-        <div id="listado" class="container listado">
-            <div class="mix css">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://awesome-northcutt-02dc21.netlify.com/" target="_blank">
-                        <img src="img/1.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>Airbnb</h3>
-                        <p>Un pequeño clon del homepage de airbnb con algún estilo propio.</p>
-                        <a href="https://awesome-northcutt-02dc21.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div>
-                </div>
-            </div>
-                
-            <div class="mix Bootstrap">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://nervous-mayer-ce1dff.netlify.com/" target="_blank">
-                        <img src="img/2.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>Website</h3>
-                        <p>Un Sitio Web para una Escuela de Cocina.</p>
-                        <a href="https://nervous-mayer-ce1dff.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mix Bootstrap">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://stoic-bassi-875fb0.netlify.com/" target="_blank">
-                        <img src="img/3.jpg">
-                    </a>
-                    <div class="mask contenido">
-                        <h3>Website</h3>
-                        <p>Un Sitio Web para un Spa, con diferentes enlaces a nuevas secciones.</p>
-                        <a href="https://stoic-bassi-875fb0.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="mix css">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://vigorous-spence-96fd06.netlify.com/" target="_blank">
-                        <img src="img/4.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>Website</h3>
-                        <p>Un sitio web de cursos en línea, usando un efecto de masonry.</p>
-                        <a href="https://vigorous-spence-96fd06.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="mix Bootstrap">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://lucid-cori-ba0aa0.netlify.com/" target="_blank">
-                        <img src="img/5.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>Website</h3>
-                        <p>Un pequeño clon de fiverr, la website para freelancer.</p>
-                        <a href="https://lucid-cori-ba0aa0.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div> 
-                </div>
-            </div>
-            <div class="mix React">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
-                        <img src="img/6.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>REST API</h3>
-                        <p>Una SPA usando el API de Evenbrite.</p>
-                        <a href="https://suspicious-austin-662980.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="mix React">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
-                        <img src="img/7.jpg">
-                    </a> 
-                    <div class="mask contenido">
-                        <h3>REST API</h3>
-                        <p>Una SPA usando el API de Evenbrite.</p>
-                        <a href="https://suspicious-austin-662980.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div> 
-                </div>
-            </div>
-
-            <div class="mix React">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
-                        <img src="img/8.jpg">
-                    </a>
-                    <div class="mask contenido">
-                        <h3>REST API</h3>
-                        <p>Una SPA usando el API de Evenbrite.</p>
-                        <a href="https://suspicious-austin-662980.netlify.com/"  target="_blank" class="info">View Live</a>
-                    </div>  
-                </div>
-            </div>
-            
-            <div class="gap"></div>
-            <div class="gap"></div>
-            <div class="gap"></div>
+    <section id="projects" class="portfolio">
+      <div class="contenedor">
+        <h2>Portfolio</h2>
+        <div class="button-set">
+          <button type="button" class="filter-button" data-filter="all">All</button>
+          <button type="button" class="filter-button" data-filter=".css">Css Flexbox & Grid</button>
+          <button type="button" class="filter-button" data-filter=".Bootstrap">Bootstrap 4</button>
+          <button type="button" class="filter-button" data-filter=".React">React JS</button>
         </div>
+        
+          <div id="listado" class="container listado">
+              <div class="mix css">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://awesome-northcutt-02dc21.netlify.com/" target="_blank">
+                          <img src="img/1.jpg">
+                      </a> 
+                      <div class="mask contenido">
+                          <h3>Airbnb</h3>
+                          <p>Un pequeño clon del homepage de airbnb con algún estilo propio.</p>
+                          <a href="https://awesome-northcutt-02dc21.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div>
+                  </div>
+              </div>
+                  
+              <div class="mix Bootstrap">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://nervous-mayer-ce1dff.netlify.com/" target="_blank">
+                          <img src="img/2.jpg">
+                      </a> 
+                      <div class="mask contenido">
+                          <h3>Website</h3>
+                          <p>Un Sitio Web para una Escuela de Cocina.</p>
+                          <a href="https://nervous-mayer-ce1dff.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="mix Bootstrap">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://stoic-bassi-875fb0.netlify.com/" target="_blank">
+                          <img src="img/3.jpg">
+                      </a>
+                      <div class="mask contenido">
+                          <h3>Website</h3>
+                          <p>Un Sitio Web para un Spa, con diferentes enlaces a nuevas secciones.</p>
+                          <a href="https://stoic-bassi-875fb0.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div> 
+                  </div>
+              </div>
+  
+              <div class="mix css">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://vigorous-spence-96fd06.netlify.com/" target="_blank">
+                          <img src="img/4.jpg">
+                      </a> 
+                      <div class="mask contenido">
+                          <h3>Website</h3>
+                          <p>Un sitio web de cursos en línea, usando un efecto de masonry.</p>
+                          <a href="https://vigorous-spence-96fd06.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div> 
+                  </div>
+              </div>
+  
+              <div class="mix Bootstrap">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://lucid-cori-ba0aa0.netlify.com/" target="_blank">
+                          <img src="img/5.jpg">
+                      </a> 
+                      <div class="mask contenido">
+                          <h3>Website</h3>
+                          <p>Un pequeño clon de fiverr, la website para freelancer.</p>
+                          <a href="https://lucid-cori-ba0aa0.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div> 
+                  </div>
+              </div>
+              <div class="mix React">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
+                          <img src="img/6.jpg">
+                      </a> 
+                      <div class="mask contenido">
+                          <h3>REST API</h3>
+                          <p>Una SPA usando el API de Evenbrite.</p>
+                          <a href="https://suspicious-austin-662980.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div> 
+                  </div>
+              </div>
+  
+              <div class="mix React">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
+                          <img src="img/7.jpg">
+                      </a> 
+                      <div class="mask contenido">
+                          <h3>REST API</h3>
+                          <p>Una SPA usando el API de Evenbrite.</p>
+                          <a href="https://suspicious-austin-662980.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div> 
+                  </div>
+              </div>
+  
+              <div class="mix React">            
+                  <div class="project-content content-effects elemento">
+                      <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
+                          <img src="img/8.jpg">
+                      </a>
+                      <div class="mask contenido">
+                          <h3>REST API</h3>
+                          <p>Una SPA usando el API de Evenbrite.</p>
+                          <a href="https://suspicious-austin-662980.netlify.com/"  target="_blank" class="info">View Live</a>
+                      </div>  
+                  </div>
+              </div>
+              
+              <div class="gap"></div>
+              <div class="gap"></div>
+              <div class="gap"></div>
+          </div>
+   
+      </div>
     </section>
 
+    <section id="gear">
+            <h2>Gear</h2>
+            <!-- Slideshow 3 -->
+
+        <div class="contenedor-slider">
+          
+            <ul class="rslides" id="slider3">
+                <li><img src="img/slide_html5.png" alt=""></li>
+                <li><img src="img/slide_css.png" alt=""></li>
+                <li><img src="img/slide_js.png" alt=""></li>
+                <li><img src="img/slide_webpack.jpg" alt=""></li>
+                <li><img src="img/slider_gulp.jpg" alt=""></li>
+                <li><img src="img/slide_bootstrap.png" alt=""></li>
+                <li><img src="img/slider_reactjs.jpg" alt=""></li>
+                <li><img src="img/slide_visualstudio.png" alt=""></li>
+                <li><img src="img/slide_nodejs.png" alt=""></li>
+            </ul>
+        
+            <!-- Slideshow 3 Pager -->
+            <ul id="slider3-pager">
+                <li><a href="#"><img src="img/icon_html5.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_css.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_js.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_webpack.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_gulp.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_bootstrap.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_reactjs.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_visualstudio.png" alt=""></a></li>
+                <li><a href="#"><img src="img/icon_nodejs.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
 
     <footer class="footer">
         <div id="contact" class="contenedor">
@@ -299,10 +335,8 @@
                 <div class="copyright">
                   <p id="copyright"><span>© 2019 <a href="mailto:alex.fernando.801@gmail.com">Alex Fernando.</a></span> Made in Perú</p>
                 </div>
-        </div>
-        
+        </div>        
     </footer>
-
 </body>
 </html>
 
