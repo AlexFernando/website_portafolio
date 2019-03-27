@@ -49,10 +49,11 @@ h2 {
     margin-top: 5rem;
     color: rgb(77, 77, 77);
     letter-spacing: .3rem;
+    padding: 4rem 0 0 0;
 }
 @media(min-width:768px) {
     h2 {
-        margin-top: 10rem;
+        padding: 5rem 0 2rem 0;
     }
 }
 
@@ -121,16 +122,19 @@ p {
   .contenedor-mobile {
     position: fixed;  
     width:100%;
+    z-index: 200;
   }
   .menu-Trigger{
     display: flex;
     flex-direction: column;
-        color:white;
-        background-color: black;
-        padding:1.2rem;
-        text-align: center;
-        cursor:pointer;
-        font-family: raleway;
+    color:white;
+    background-color: #222629;
+    padding:1.2rem;
+    text-align: center;
+    cursor:pointer;
+    font-family: raleway;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #61892F;
   }
  
   /*.border-menu.activo{
@@ -178,26 +182,32 @@ p {
     height: 10rem;
     transition: opacity .2s ease-in;
 }*/
+.menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+}
 
 .menu-mobile ul li {
     list-style: none;
     margin-bottom: 1rem;
-    margin-right: 2rem;
-    text-align: center;
+    display: flex;
+    font-family: Raleway;
 }
 
 .menu-mobile ul li a {
     color: #86C232;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 100;
-    text-transform: uppercase; 
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;    
 }
 
-.menu-mobile ul li a i{
+.menu-mobile ul li i{
     color: #86C232;
     font-size: 1.5rem;
-    margin-right: 1rem;
+    margin-right: .3rem;
 }
 
 
@@ -505,6 +515,17 @@ section:nth-of-type(1) .bar .tag {
 }
 
 /*PORTFOLIO*/
+.portfolio {
+    background-color:rgb(214, 213, 213);
+}
+@media(min-width:768px) {
+    .portfolio {
+        background-color:rgb(214, 213, 213);
+        height: 100vh;
+    }
+}
+
+
 .listado {
     padding: 1rem;
     display: flex;
@@ -562,7 +583,6 @@ section:nth-of-type(1) .bar .tag {
 }
 
 /**Portfolio buttons filter**/
-
 .button-set .filter-button {
     padding: .4rem 1rem;
     background-color:  #292c29;  
@@ -694,6 +714,44 @@ section:nth-of-type(1) .bar .tag {
     transform: scale(1);
 }
 
+/**SLIDER**/
+.contenedor-slider {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 100%;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 50%; /*changed this line*/
+    padding: 0;
+    margin: 0;
+}
+  
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+  
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+  
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
 /*Footer*/
 .footer {
     background: #7d7e7d; /* Old browsers */

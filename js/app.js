@@ -14,9 +14,19 @@ jQuery(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() { onScrollInit($('.waypoint')) }, 100);
     //navegacion();
+    //mixItUp function
     $(function() {  
         var mixer = mixitup('.container');
     });
+    //slider function
+    $(function() {
+        $(".rslides").responsiveSlides();
+        $("#slider3").responsiveSlides({
+            manualControls: '#slider3-pager',
+            maxwidth: 540
+          });
+    });
+      
 });
 
 
