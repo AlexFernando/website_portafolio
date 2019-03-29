@@ -11,43 +11,35 @@
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>AlexFernando</title>    
-      <!-- CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-      <!--LOCAL-->
-    <script src="js/app.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
 </head>
 
 <body>                
         <!--<a href="#menu" class="border-menu">
             <i class="fas fa-bars"></i>
             </a>-->
-        <div class="contenedor-mobile">
-                <span class="menu-Trigger">&#9776; Menu</span>  
-                <nav id="navbar-mobile" class="menu-mobile">
-                        <ul>
-                            <li><i class="fas fa-home"></i><a href="#welcome-section">Home</a></li>
-                            <li><i class="fas fa-id-card-alt"></i><a href="#about">About</a></li>
-                            <li><i class="fas fa-suitcase"></i><a href="#projects">Portfolio</a></li>
-                            <li><i class="fas fa-suitcase"></i><a href="#gear">Gear</a></li>
-                            <li><i class="far fa-envelope"></i><a href="#contact">Contact</a></li>
-                        </ul>
-                </nav>
-        </div>
-      
-    <div id="welcome-section" class="hero">              
         <div class="barra">
             <nav id="navbar" class="navegacion">  
-                <a href="#welcome-section" id="home_nav" class="mycolor">Home</a>
-                <a href="#about" id="about_nav">About</a>
-                <a href="#projects" id="projects_nav">Portfolio</a>
-                <a href="#gear" id="gear_nav">Gear</a>
-                <a href="#contact" id="contact_nav">Contact</a>
+                <a href="#welcome-section" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#gear">Gear</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
+        <div class="contenedor-mobile">
+            <span class="menu-Trigger">&#9776; Menu</span>  
+            <nav id="navbar-mobile" class="menu-mobile">
+                    <ul>
+                        <li><i class="fas fa-home"></i><a href="#welcome-section">Home</a></li>
+                        <li><i class="fas fa-id-card-alt"></i><a href="#about">About</a></li>
+                        <li><i class="fas fa-suitcase"></i><a href="#projects">Portfolio</a></li>
+                        <li><i class="fas fa-suitcase"></i><a href="#gear">Gear</a></li>
+                        <li><i class="far fa-envelope"></i><a href="#contact">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+
+    <div id="welcome-section" class="mySection hero">              
         <div class="contenedor">
             <div class="contenido-home">
                 <h1 class="titulo">Hello, I'm <span>Alex Fernando.</span><br>I'm a enthusiastic web developer.</h1>
@@ -56,10 +48,9 @@
                 </div>               
             </div>
         </div>
-     
     </div>
 
-    <section id="about">
+    <section id="about" class="mySection">
       <h2>About</h2>
       <div class="servicios contenedor">        
         <div class="servicio">
@@ -157,7 +148,7 @@
         </div>        
   </section>
 
-    <section id="projects" class="portfolio">
+    <section id="projects" class="portfolio mySection">
       <div class="contenedor">
         <h2>Portfolio</h2>
         <div class="button-set">
@@ -279,7 +270,7 @@
       </div>
     </section>
 
-    <section id="gear">
+    <section id="gear" class="mySection">
             <h2>Gear</h2>
             <!-- Slideshow 3 -->
 
@@ -312,8 +303,8 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div id="contact" class="contenedor">
+    <section  id="contact" class="footer mySection">
+        <div  class="contenedor">
               <h3>Thanks!</h3>
               <div class="elements">
                 <p>If you like my work and need some projects to be done, just send me a message or contact me through social sites listed below.</p>
@@ -328,11 +319,23 @@
                         <li><a href="mailto:alex.fernando.801@gmail.com" target="_blank"><span>Gmail</span></a></li>
                     </ul>
                 </nav>  
-                <div class="copyright">
-                  <p id="copyright"><span>© 2019 <a href="mailto:alex.fernando.801@gmail.com">Alex Fernando.</a></span> Made in Perú</p>
-                </div>
+
         </div>        
+    </section>
+
+    <footer>
+        <div class="copyright">
+                <p id="copyright"><span>© 2019 <a href="mailto:alex.fernando.801@gmail.com">Alex Fernando.</a></span> Made in Perú</p>
+        </div>
     </footer>
+          <!-- CDN -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+            <!--LOCAL-->
+          <script src="js/app.js"></script>
+          <script src="js/responsiveslides.min.js"></script>
 </body>
 </html>
 

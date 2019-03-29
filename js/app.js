@@ -1,14 +1,16 @@
 window.addEventListener("hashchange", function() { scrollBy(0, -80) })
 
+
 //change background color when scroll 
-window.onscroll = (e) => {
+/*window.onscroll = (e) => {
     const scroll = window.scrollY; 
+    const otherScroll = document.body.scrollTop;
     const home = document.querySelector('#home_nav');
     const about = document.querySelector('#about_nav');
     const project = document.querySelector('#projects_nav');
     const gear = document.querySelector('#gear_nav');
     const contact = document.querySelector('#contact_nav');
-  
+    console.log(otherScroll);
 
     switch(true) {
         case (scroll>0 && scroll<320):
@@ -38,7 +40,7 @@ window.onscroll = (e) => {
             break;
         case (scroll>2624 && scroll<2955):
             about.removeAttribute('style');
-            home.removeAttribute('style');
+            home.classList.remove('mycolor');
             project.removeAttribute('style');
             gear.removeAttribute('style');
             contact.style.color = '#e5e5e5';
@@ -50,7 +52,7 @@ window.onscroll = (e) => {
             gear.removeAttribute('style');
             contact.removeAttribute('style');
     }
-}
+}*/
 
 
 jQuery(document).ready(function() {
@@ -77,40 +79,35 @@ document.addEventListener('DOMContentLoaded', function() {
             manualControls: '#slider3-pager',
             maxwidth: 540
           });
-    });
-      
+    });      
 });
 
+//scrollSpy
+(function() {
+    'use strict';
 
-/*function navegacion(){
-        //Inicializar las variables 
-        let i = 0;
-        let tiempo = 0;
-        //boton flotante en el footer
-        const borderMenu = document.querySelector('.border-menu');
+    let sections = document.querySelectorAll('.mySection');
     
-        borderMenu.addEventListener('click', (e) => {
-            e.preventDefault();
+    let arrayOffset = {};
+
+    let section = 0;
+
+    Array.prototype.forEach.call(sections, function(e) {
+        arrayOffset[e.id] = e.offsetTop;
+    });
     
-            // Prevenimos default, pero ejecutamos el siguiente código
-    
-            const menuMobile = document.querySelector('#navbar-mobile');
-            console.log(menuMobile.classList, borderMenu.classList);
-    
-            if(menuMobile.classList.contains('activo')) {
-                //Si contiene activo, ejecuta este codigo
-                menuMobile.classList.remove('activo');
-                borderMenu.classList.remove('activo');
-                borderMenu.innerText = '';
-    
+    window.onscroll = function() {
+        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        for(section in arrayOffset) {
+            if(arrayOffset[section] <= scrollPosition) {
+                document.querySelector('.active').setAttribute('class',' ');
+                document.querySelector('a[href*=' + section + ']').setAttribute('class', 'active');
             }
-            else {
-                //Si no lo contiene, ejecuta esto
-                menuMobile.classList.add('activo');
-                borderMenu.classList.add('activo');
-            }
-        })
-}*/
+        }
+    };
+
+})();
 
    // SCROLL ANIMATIONS
    function onScrollInit( items, elemTrigger ) {
