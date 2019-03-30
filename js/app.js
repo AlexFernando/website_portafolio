@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+
 })();
 
    // SCROLL ANIMATIONS

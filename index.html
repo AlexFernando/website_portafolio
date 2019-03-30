@@ -51,24 +51,24 @@
     </div>
 
     <section id="about" class="mySection">
-      <h2>About</h2>
+      <h2 class="waypoint" data-animation="slide-Down">About</h2>
       <div class="servicios contenedor">        
         <div class="servicio">
-            <i class="fas fa-code"></i>
-            <h3>Design & Programming</h3>
-            <p>I'll build a functional website that fits your product, taking care of details</p>
+            <i class="fas fa-code waypoint" data-animation="flip-in-x"></i>
+            <h3 class="waypoint" data-animation="fade-in">Design & Programming</h3>
+            <p class="waypoint" data-animation="fade-in">I'll build a functional website that fits your product, taking care of details</p>
         </div>
 
         <div class="servicio">
-            <i class="fas fa-mobile-alt"></i>
-            <h3>Responsive Design</h3>
-            <p>Your website will work, either in big or small screen.</p>
+            <i class="fas fa-mobile-alt waypoint" data-animation="flip-in-x" data-delay=".2s" ></i>
+            <h3 class="waypoint" data-animation="fade-in" data-delay=".2s">Responsive Design</h3>
+            <p class="waypoint" data-animation="fade-in" data-delay=".2s"> Your website will work, either in big or small screen.</p>
         </div>
 
         <div class="servicio">
-            <i class="fas fa-skiing"></i>
-            <h3>Fast & Intituive</h3>
-                <p>Fast load and easy to use, dynamic and intuitive UX/UI.</p>
+            <i class="fas fa-skiing waypoint" data-animation="flip-in-x" data-delay=".3s"></i>
+            <h3 class="waypoint" data-animation="fade-in" data-delay=".4s">Fast & Intituive</h3>
+                <p class="waypoint" data-animation="fade-in" data-delay=".4s">Fast load and easy to use, dynamic and intuitive UX/UI.</p>
         </div>
 
       </div>
@@ -150,8 +150,8 @@
 
     <section id="projects" class="portfolio mySection">
       <div class="contenedor">
-        <h2>Portfolio</h2>
-        <div class="button-set">
+        <h2 class="waypoint" data-animation="slide-Down">Portfolio</h2>
+        <div class="button-set waypoint" data-animation="slide-in-left">
           <button type="button" class="filter-button" data-filter="all">All</button>
           <button type="button" class="filter-button" data-filter=".css">Css Flexbox & Grid</button>
           <button type="button" class="filter-button" data-filter=".Bootstrap">Bootstrap 4</button>
@@ -159,7 +159,7 @@
         </div>
         
           <div id="listado" class="container listado">
-              <div class="mix css">            
+              <div class="mix css waypoint" data-animation="flip-in-x">            
                   <div class="project-content content-effects elemento">
                       <a href="https://awesome-northcutt-02dc21.netlify.com/" target="_blank">
                           <img src="img/1.jpg">
@@ -172,7 +172,7 @@
                   </div>
               </div>
                   
-              <div class="mix Bootstrap">            
+              <div class="mix Bootstrap waypoint" data-animation="flip-in-x" data-delay=".2s">            
                   <div class="project-content content-effects elemento">
                       <a href="https://nervous-mayer-ce1dff.netlify.com/" target="_blank">
                           <img src="img/2.jpg">
@@ -185,7 +185,7 @@
                   </div>
               </div>
   
-              <div class="mix Bootstrap">            
+              <div class="mix Bootstrap waypoint" data-animation="flip-in-x" data-delay=".4s"">            
                   <div class="project-content content-effects elemento">
                       <a href="https://stoic-bassi-875fb0.netlify.com/" target="_blank">
                           <img src="img/3.jpg">
@@ -198,7 +198,7 @@
                   </div>
               </div>
   
-              <div class="mix css">            
+              <div class="mix css waypoint" data-animation="flip-in-x" data-delay=".6s">            
                   <div class="project-content content-effects elemento">
                       <a href="https://vigorous-spence-96fd06.netlify.com/" target="_blank">
                           <img src="img/4.jpg">
@@ -211,7 +211,7 @@
                   </div>
               </div>
   
-              <div class="mix Bootstrap">            
+              <div class="mix Bootstrap waypoint" data-animation="flip-in-x" data-delay=".7s">            
                   <div class="project-content content-effects elemento">
                       <a href="https://lucid-cori-ba0aa0.netlify.com/" target="_blank">
                           <img src="img/5.jpg">
@@ -223,7 +223,7 @@
                       </div> 
                   </div>
               </div>
-              <div class="mix React">            
+              <div class="mix React waypoint" data-animation="flip-in-x" data-delay=".9s">            
                   <div class="project-content content-effects elemento">
                       <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
                           <img src="img/6.jpg">
@@ -236,7 +236,7 @@
                   </div>
               </div>
   
-              <div class="mix React">            
+              <div class="mix React waypoint" data-animation="flip-in-x" data-delay="1.1s">            
                   <div class="project-content content-effects elemento">
                       <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
                           <img src="img/7.jpg">
@@ -249,7 +249,7 @@
                   </div>
               </div>
   
-              <div class="mix React">            
+              <div class="mix React waypoint" data-animation="flip-in-x" data-delay="1.3s">            
                   <div class="project-content content-effects elemento">
                       <a href="https://suspicious-austin-662980.netlify.com/" target="_blank">
                           <img src="img/8.jpg">
@@ -271,46 +271,47 @@
     </section>
 
     <section id="gear" class="mySection">
-            <h2>Gear</h2>
+            <h2 class="waypoint" data-animation="slide-Down">Gear</h2>
             <!-- Slideshow 3 -->
 
-        <div class="contenedor-slider">
-          
-            <ul class="rslides" id="slider3">
-                <li><img src="img/slide_html5.png" alt=""></li>
-                <li><img src="img/slide_css.png" alt=""></li>
-                <li><img src="img/slide_js.png" alt=""></li>
-                <li><img src="img/slide_webpack.jpg" alt=""></li>
-                <li><img src="img/slider_gulp.jpg" alt=""></li>
-                <li><img src="img/slide_bootstrap.png" alt=""></li>
-                <li><img src="img/slider_reactjs.jpg" alt=""></li>
-                <li><img src="img/slide_visualstudio.png" alt=""></li>
-                <li><img src="img/slide_nodejs.png" alt=""></li>
-            </ul>
-        
-            <!-- Slideshow 3 Pager -->
-            <ul id="slider3-pager">
-                <li><a href="#"><img src="img/icon_html5.png" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_css.png" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_js.png" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_webpack.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_gulp.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_bootstrap.png" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_reactjs.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_visualstudio.png" alt=""></a></li>
-                <li><a href="#"><img src="img/icon_nodejs.png" alt=""></a></li>
-            </ul>
-        </div>
+            <div class="contenedor-slider waypoint" data-animation="slide-in-right">
+                <ul class="rslides" id="slider3">
+                    <li><img src="img/slide_html5.png" alt=""></li>
+                    <li><img src="img/slide_css.png" alt=""></li>
+                    <li><img src="img/slide_js.png" alt=""></li>        
+                    <li><img src="img/slide_webpack.jpg" alt=""></li>
+                    <li><img src="img/slider_gulp.jpg" alt=""></li>
+                    <li><img src="img/slide_bootstrap.png" alt=""></li>
+                    <li><img src="img/slider_reactjs.jpg" alt=""></li>
+                    <li><img src="img/slide_visualstudio.png" alt=""></li>
+                    <li><img src="img/slide_nodejs.png" alt=""></li>
+                </ul>
+            
+                <!-- Slideshow 3 Pager -->
+                <ul id="slider3-pager">
+                    <li><a href="#"><img src="img/icon_html5.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_css.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_js.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_webpack.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_gulp.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_bootstrap.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_reactjs.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_visualstudio.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon_nodejs.png" alt=""></a></li>
+                </ul>
+            </div>
+
     </section>
 
-    <section  id="contact" class="footer mySection">
+    <section id="contact" class="footer mySection">
         <div  class="contenedor">
-              <h3>Thanks!</h3>
-              <div class="elements">
+              <h2 class="waypoint" data-animation="slide-Down">Thanks!</h2>
+              <h3 class="waypoint" data-animation="slide-in-left">Let's build something great!</h3>
+              <div class="elements waypoint" data-animation="slide-in-right">
                 <p>If you like my work and need some projects to be done, just send me a message or contact me through social sites listed below.</p>
                 
               </div>
-              <a href="mailto:alex.fernando.801@gmail.com" class="contact-footer">Contact me</a>
+              <a href="mailto:alex.fernando.801@gmail.com" class="contact-footer waypoint" data-animation="fade-in" data-delay=".4s">Contact me</a>
                 <nav class="sociales">
                     <ul>
                         <li><a id="profile-link" href="https://github.com/AlexFernando" target="_blank"><span>Github</span></a></li>
