@@ -103,6 +103,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if(arrayOffset[section] <= scrollPosition) {
                 document.querySelector('.active').setAttribute('class',' ');
                 document.querySelector('a[href*=' + section + ']').setAttribute('class', 'active');
+                
+                /*let myNavbar =  document.querySelector('.navegacion');
+              
+                if(section === 'about' || section === 'projects' || section === 'gear') {
+                    myNavbar.classList.add('myColor');
+                }
+                else {
+                    myNavbar.classList.remove('myColor');
+                }*/
             }
         }
     };
