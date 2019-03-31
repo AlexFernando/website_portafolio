@@ -236,10 +236,10 @@ p {
 
 .menu-mobile ul li a {
     color: #86C232;
-    text-decoration: none;
     font-size: 1.2rem;
     font-weight: 400;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    text-decoration: none;    
 }
 
 .menu-mobile ul li i{
@@ -270,10 +270,12 @@ p {
         z-index: 100;
         justify-content: flex-end;
     }
+    /*.barra .navegacion.myColor {
+        background: white;
+    }*/
   
     .barra .navegacion a {
-        color: #86C232;
-        text-decoration: none;
+        color: #86C232; 
         font-size: 1.5rem;
         font-weight: 100;
         text-transform: uppercase;  
@@ -281,7 +283,7 @@ p {
         margin-right: 1rem;
     }
     .barra .navegacion a.active {
-        color: #e5e5e5;
+        color: white;
     }
     
     .navegacion a:last-of-type {
@@ -362,9 +364,9 @@ p {
 }
 .welcome-button .contact-home:hover {
     cursor: pointer;
-    background-color: #61892F;
-    border-color: #61892F;
-    color: rgb(207, 202, 202);
+    background-color: white;
+    border-color: white;
+    color:#292c29;
     font-weight: 600;
 }
 
@@ -437,10 +439,6 @@ section:nth-of-type(1) {
 
 section .flex-50-gt-sm {
     display: block;
-}
-
-.waypoint {
-    opacity: 0; 
 }
 
 section:nth-of-type(1) .bar {
@@ -548,22 +546,34 @@ section:nth-of-type(1) .bar .tag {
         padding: 0 15px 0 0;
     }
 }
-.animated.flip-in-x {
-    animation: flipInX 1s ease both;
+
+    
+
+
+
+@media(min-width: 768px) {
+
+.waypoint {
+    opacity: 0; 
 }
 
 .animated.slide-Down {
     animation: slideDown .75s ease both;
 }
+    .animated.flip-in-x {
+        animation: flipInX 1s ease both;
+    }    
+    .animated.slide-in-left {
+        animation: slideInLeft .75s ease both; 
+    }
+    .animated.slide-in-right {
+        animation: slideInRight .75s ease both;
+    }
+    .animated.fade-in {
+        animation: fadeIn .75s ease both; }
+    
+}
 
-.animated.slide-in-left {
-    animation: slideInLeft .75s ease both; 
-}
-.animated.slide-in-right {
-    animation: slideInRight .75s ease both;
-}
-.animated.fade-in {
-    animation: fadeIn .75s ease both; }
 
 /*PORTFOLIO*/
 .portfolio {
@@ -830,7 +840,7 @@ section:nth-of-type(1) .bar .tag {
 
 .footer h2::before {
     height: .15rem;
-    width: 4rem;
+    width: 3rem;
     background-color: white;
     content: '';
     display: inline-block;
@@ -839,7 +849,7 @@ section:nth-of-type(1) .bar .tag {
 
 .footer h2::after {
     height: .15rem;
-    width: 4rem;
+    width: 3rem;
     background-color: white;
     content: '';
     display: inline-block;
@@ -966,6 +976,19 @@ section:nth-of-type(1) .bar .tag {
     display: none;
 } 
 
+.icon-up {
+    padding: .8rem 1.2rem;
+    background-color: #61892F;
+    color: white;
+    transition: background-color .4s ease;
+}
+.icon-up:hover {
+    cursor: pointer;
+    background-color: rgba(131, 224, 220, 0.705); 
+}
+
+
+/*FOOTER FINAL*/
 .copyright {
     display: flex;
     justify-content: center;
