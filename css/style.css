@@ -270,9 +270,14 @@ p {
         z-index: 100;
         justify-content: flex-end;
     }
-    /*.barra .navegacion.myColor {
+    .barra .navegacion.myBarColor {
         background: white;
-    }*/
+        border-bottom: none;
+    }
+    .barra .navegacion.myBarColor2 {
+        background: rgb(214, 213, 213);
+        border-bottom: none;
+    }
   
     .barra .navegacion a {
         color: #86C232; 
@@ -283,9 +288,25 @@ p {
         margin-right: 1rem;
     }
     .barra .navegacion a.active {
-        color: white;
+        text-decoration: underline;
+        text-decoration-style: double;
     }
-    
+
+    .barra .navegacion a.active.myTagColor{
+        color: black;
+    }
+    /*.barra .navegacion a.nav2 {
+        color: black; 
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-transform: uppercase;  
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+    .barra .navegacion a.active2 {
+        color: #61892F;
+    }*/
+
     .navegacion a:last-of-type {
         margin-right: 1.5rem;
     }

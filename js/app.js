@@ -101,16 +101,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
         for(section in arrayOffset) {
             if(arrayOffset[section] <= scrollPosition) {
+                let myNavbar =  document.querySelector('.navegacion');
+                
                 document.querySelector('.active').setAttribute('class',' ');
                 document.querySelector('a[href*=' + section + ']').setAttribute('class', 'active');
                 
-                /*let myNavbar =  document.querySelector('.navegacion');
-              
-                if(section === 'about' || section === 'projects' || section === 'gear') {
-                    myNavbar.classList.add('myColor');
+                /*if(section === 'about' || section === 'gear') {
+                    myNavbar.classList.add('myBarColor');
+                    myNavbar.classList.remove('myBarColor2');
+                }
+                else if(section === 'projects') {
+                    myNavbar.classList.add('myBarColor2')
+                    myNavbar.classList.remove('myBarColor');
                 }
                 else {
-                    myNavbar.classList.remove('myColor');
+                    myNavbar.classList.remove('myBarColor');
+                    myNavbar.classList.remove('myBarColor2');
+                    
                 }*/
             }
         }
