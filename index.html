@@ -42,7 +42,7 @@
     <div id="welcome-section" class="mySection hero">              
         <div class="contenedor">
             <div class="contenido-home">
-                <h1 class="titulo waypoint" data-animation="flip-in-x" data-delay=".1s" >Hello, I'm <span>Alex Fernando.</span><br>I'm a enthusiastic web developer.</h1>
+                <h1 class="titulo waypoint" data-animation="flip-in-x" data-delay=".1s" >Hello, I'm <span>Alex Fernando.</span><br>I'm a enthusiastic <span>Front-end</span> developer.</h1>
                 <div class="welcome-button waypoint" data-animation="flip-in-x" data-delay=".1s">
                     <a href="#projects" class="contact-home">View my work</a>
                 </div>               
@@ -337,6 +337,20 @@
             <!--LOCAL-->
           <script src="js/app.js"></script>
           <script src="js/responsiveslides.min.js"></script>
+          <script src="js/three.r92.min.js"></script>   
+          <script src="js/vanta.net.min.js"></script>
+
+<script>
+    console.log($(window).width())
+    if($(window).width() >= 768){
+        VANTA.NET({
+            el: "#welcome-section",
+            color: 0x6B6E70,
+            backgroundColor: 0x292c29
+          })
+    }
+</script>
+
 </body>
 </html>
 
