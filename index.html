@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <meta property="og:site_name" content="Alex can code, personal website">
+    <meta property="og:title" content="Alex can code, personal website" />
+    <meta property="og:description" content="Alex can code, personal website, where I show my portfolio" />
+    <meta property="og:url" content="https://alexcancode.tech/" />
+    <meta property="og:image:secure_url" itemprop="image" content="./img/cloudcomputing.jpg">
+    <!-- <meta property="og:image:secure_url" itemprop="image" content="http://webdevelopmentscripts.com/post-images/685b-change-browser-address-bar-color-chrome-android.jpeg"> -->
+    <meta property="og:image:type" content="image/jpg">
+    <!-- <meta property="og:image:type" content="image/jpeg"> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Oswald" rel="stylesheet">
@@ -21,8 +32,8 @@
             <nav id="navbar" class="navegacion">  
                 <a href="#welcome-section" class="active change-color1">Home</a>
                 <a href="#about">About</a>
-                <a href="#projects">Portfolio</a>
-                <a href="#gear">Gear</a>
+                <a href="#projects">Recent Work</a>
+                <!-- <a href="#gear">Gear</a> -->
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -32,8 +43,8 @@
                     <ul>
                         <li><i class="fas fa-home"></i><a href="#welcome-section">Home</a></li>
                         <li><i class="fas fa-id-card-alt"></i><a href="#about">About</a></li>
-                        <li><i class="fas fa-suitcase"></i><a href="#projects">Portfolio</a></li>
-                        <li><i class="fas fa-suitcase"></i><a href="#gear">Gear</a></li>
+                        <li><i class="fas fa-suitcase"></i><a href="#projects">Recent Work</a></li>
+                        <!-- <li><i class="fas fa-suitcase"></i><a href="#gear">Gear</a></li> -->
                         <li><i class="far fa-envelope"></i><a href="#contact">Contact</a></li>
                     </ul>
             </nav>
@@ -42,7 +53,7 @@
     <div id="welcome-section" class="mySection hero">              
         <div class="contenedor">
             <div class="contenido-home">
-                <h1 class="titulo waypoint" data-animation="flip-in-x" data-delay=".1s" >Hello, I'm <span>Alex Fernando.</span><br>I'm a <span>Front-end</span> developer.</h1>
+                <h1 class="titulo waypoint" data-animation="flip-in-x" data-delay=".1s" >Hello, I'm <span>Alex Fernando.</span><br>I'm a <span>Web</span> Developer.</h1>
                 <div class="welcome-button waypoint" data-animation="flip-in-x" data-delay=".1s">
                     <a href="#projects" class="contact-home">View my work</a>
                 </div>               
@@ -68,18 +79,18 @@
         <div class="servicio">
             <i class="fas fa-skiing waypoint" data-animation="flip-in-x" data-delay=".3s"></i>
             <h3 class="waypoint" data-animation="fade-in" data-delay=".4s">Fast & Intituive</h3>
-                <p class="waypoint" data-animation="fade-in" data-delay=".4s">Fast load and easy to use, dynamic and intuitive UX/UI.</p>
+                <p class="waypoint" data-animation="fade-in" data-delay=".4s">Fast load and easy to use, dynamic and intuitive User Interfaces.</p>
         </div>
 
       </div>
       
       <div class="contenedor flex row-gt-sm">
           <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-            <img src="img/image_pro.png" class="me">
+            <img src="img/photo_2.jpg" class="me">
             <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
             <div class="bold">Who am I?</div>
             <div class="me-description">
-              I'm a Front-End Developer, who is constantly learning new technologies and aproaches to make UI/UX better and better.
+              I'm a Web Developer, who is constantly learning new technologies and aproaches to build better products.
               <br>
               I have passion for creating the best user interfaces for your products.
               <br>
@@ -150,93 +161,117 @@
 
     <section id="projects" class="portfolio mySection">
       <div class="contenedor">
-        <h2 class="waypoint" data-animation="slide-Down">Portfolio</h2>
+        <h2 class="waypoint" data-animation="slide-Down">Recent Work</h2>
         <div class="button-set waypoint" data-animation="slide-in-left">
           <button type="button" class="filter-button" data-filter="all">All</button>
-          <button type="button" class="filter-button" data-filter=".Frontity">Frontity.js(Wordpress+React.js)</button>
-          <button type="button" class="filter-button" data-filter=".Gatsby">Gatsby.js</button>
+          <button type="button" class="filter-button" data-filter=".WordPress">WordPress</button>
+          <button type="button" class="filter-button" data-filter=".Hybrid">Wordpress+React.js</button>
           <button type="button" class="filter-button" data-filter=".React">React.js</button>
+          <!-- <button type="button" class="filter-button" data-filter=".Gatsby">Gatsby.js</button>
           <button type="button" class="filter-button" data-filter=".Node">Node.js + React.js</button>
-          <button type="button" class="filter-button" data-filter=".Bootstrap">Bootstrap</button>
+          <button type="button" class="filter-button" data-filter=".Bootstrap">Bootstrap</button> -->
         </div>
         
           <div id="listado" class="container listado">
-              <div class="mix Frontity">            
-                  <div class="project-content content-effects elemento">
-                      <a href="https://mainiti-website.vercel.app/" target="_blank">
-                          <img src="img/mainiti.jpg">
-                      </a> 
-                      <div class="mask contenido">
-                          <h3>MaiNiti</h3>
-                          <p>A website for a Retreat Healing Center.</p>
-                          <a href="https://mainiti-website.vercel.app/"  target="_blank" class="info">View Live</a>
-                      </div>
-                  </div>
-              </div>
-                  
-              <div class="mix Frontity">            
-                  <div class="project-content content-effects elemento">
-                      <a href="https://andes.org.pe/" target="_blank">
-                          <img src="img/andes.jpg">
-                      </a> 
-                      <div class="mask contenido">
-                          <h3>Andes Cusco</h3>
-                          <p>A site for an NGO</p>
-                          <a href="https://andes.org.pe/"  target="_blank" class="info">View Live</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="mix React">            
-                  <div class="project-content content-effects elemento">
-                      <a href="https://practical-goodall-23c66d.netlify.app/" target="_blank">
-                          <img src="img/budget_planner.png">
-                      </a>
-                      <div class="mask contenido">
-                          <h3>Web Application</h3>
-                          <p>A Budget Planner to help you managing your money.</p>
-                          <a href="https://practical-goodall-23c66d.netlify.app/"  target="_blank" class="info">View Live</a>
-                      </div> 
-                  </div>
-              </div>
-  
-              <div class="mix Frontity">            
-                  <div class="project-content content-effects elemento">
-                      <a href="https://artisandayluz.com/" target="_blank">
-                          <img src="img/event_site.jpg">
-                      </a> 
-                      <div class="mask contenido">
-                          <h3>Event website</h3>
-                          <p>A site that host events, allowing users create events.</p>
-                          <a href="https://artisandayluz.com/"  target="_blank" class="info">View Live</a>
-                      </div> 
-                  </div>
-              </div>
-  
-              <div class="mix Frontity">            
-                  <div class="project-content content-effects elemento">
-                      <a href="https://www.wildperutravels.com/" target="_blank">
-                          <img src="img/5.jpg">
-                      </a> 
-                      <div class="mask contenido">
-                          <h3>Website</h3>
-                          <p>A website for an agency travel company</p>
-                          <a href="https://www.wildperutravels.com/"  target="_blank" class="info">View Live</a>
-                      </div> 
-                  </div>
-              </div>
-              <div class="mix Node">            
-                  <div class="project-content content-effects elemento">
-                      <a href="https://birdingreport.herokuapp.com/" target="_blank">
-                          <img src="img/birding_image.jpg">
-                      </a> 
-                      <div class="mask contenido">
-                          <h3>Report Birding App</h3>
-                          <p>Generates a birding report in a .docx file based on a large dataset provided</p>
-                          <a href="https://birdingreport.herokuapp.com/"  target="_blank" class="info">View Live</a>
-                      </div> 
-                  </div>
-              </div>
+
+            <div class="mix WordPress">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://bucketdrumming.net/" target="_blank">
+                        <img src="img/bucket_in_grass_scaled.jpg">
+                    </a>
+                    <div class="mask contenido">
+                        <h3>Bucket Drumming</h3>
+                        <p>A website to Learn To Play & Teach Bucket Drumming.
+                            Even If You Don't Have a Rhythmic Background.</p>
+                        <!-- <p>- Redesign of the homepage, external pages and internal Membership. </p>
+                        <p>- Video Gallery Internal Membership </p>
+                        <p>- Plugin Customization </p>
+                        <p>- Page optimization</p>
+                        <p>- Security & More ...</p> -->
+                    
+                        <a href="https://bucketdrumming.net/"  target="_blank" class="info">View Live</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="mix WordPress">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://puttingmetogether.com/" target="_blank">
+                        <img src="img/pmt_2_scaled.png">
+                    </a>
+                    <div class="mask contenido">
+                        <h3>Putting Me Together</h3>
+                        <p>A website to Fresh Up Your Style</p>
+                        <a href="https://puttingmetogether.com/"  target="_blank" class="info">View Live</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="mix WordPress">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://tura-travel.com/" target="_blank">
+                        <img src="img/tura_travel.jpg">
+                    </a>
+                    <div class="mask contenido">
+                        <h3>Tura Travel</h3>
+                        <p>Tailor-made tours in Peru and Bolivia</p>
+                        <a href="https://tura-travel.com/"  target="_blank" class="info">View Live</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="mix Hybrid">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://www.classicjerusalem.com/" target="_blank">
+                        <img src="img/bienes_raices.png">
+                    </a>
+                    <div class="mask contenido">
+                        <h3>Classic Jerusalem</h3>
+                        <p>For a Real Estate Business</p>
+                        <a href="https://www.classicjerusalem.com/"  target="_blank" class="info">View Live</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="mix React">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://practical-goodall-23c66d.netlify.app/" target="_blank">
+                        <img src="img/budget_planner.png">
+                    </a>
+                    <div class="mask contenido">
+                        <h3>Web Application</h3>
+                        <p>A Budget Planner to help you managing your money.</p>
+                        <a href="https://practical-goodall-23c66d.netlify.app/"  target="_blank" class="info">View Live</a>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="mix Hybrid">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://andes.org.pe/" target="_blank">
+                        <img src="img/andes.jpg">
+                    </a> 
+                    <div class="mask contenido">
+                        <h3>Andes Cusco</h3>
+                        <p>A Website for an NGO</p>
+                        <a href="https://andes.org.pe/"  target="_blank" class="info">View Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="mix Node">            
+                <div class="project-content content-effects elemento">
+                    <a href="https://birdingreport.herokuapp.com/" target="_blank">
+                        <img src="img/birding_image.jpg">
+                    </a> 
+                    <div class="mask contenido">
+                        <h3>Report Birding App</h3>
+                        <p>Generates a birding report in a .docx file based on a large dataset provided</p>
+                        <a href="https://birdingreport.herokuapp.com/"  target="_blank" class="info">View Live</a>
+                    </div> 
+                </div>
+            </div>
+
   
               <div class="mix Bootstrap">            
                   <div class="project-content content-effects elemento">
@@ -250,19 +285,20 @@
                       </div> 
                   </div>
               </div>
-  
+   
               <div class="mix React">            
                   <div class="project-content content-effects elemento">
                       <a href="https://condescending-jepsen-972967.netlify.app/" target="_blank">
                           <img src="img/criptomonedas.png">
                       </a>
                       <div class="mask contenido">
-                          <h3>Criptocurrency</h3>
-                          <p>Criptocurrencies prices against differents worldwide currencies </p>
+                          <h3>Cryptocurrency</h3>
+                          <p>Cryptocurrencies prices against differents worldwide currencies </p>
                           <a href="https://condescending-jepsen-972967.netlify.app/"  target="_blank" class="info">View Live</a>
                       </div>  
                   </div>
               </div>
+
 
               <div class="mix Gatsby">            
                 <div class="project-content content-effects elemento">
@@ -275,20 +311,9 @@
                         <a href="https://fervent-lewin-9d24e6.netlify.app/"  target="_blank" class="info">View Live</a>
                     </div>  
                 </div>
-            </div>
+            </div> -->
+ 
 
-            <div class="mix Gatsby">            
-                <div class="project-content content-effects elemento">
-                    <a href="https://cranky-yalow-32183f.netlify.app/" target="_blank">
-                        <img src="img/bienes_raices.png">
-                    </a>
-                    <div class="mask contenido">
-                        <h3>Website Template</h3>
-                        <p>For a Real State Business</p>
-                        <a href="https://cranky-yalow-32183f.netlify.app/"  target="_blank" class="info">View Live</a>
-                    </div>  
-                </div>
-            </div>
               
               <div class="gap"></div>
               <div class="gap"></div>
@@ -298,24 +323,22 @@
       </div>
     </section>
 
-    <section id="gear" class="mySection">
+    <!-- <section id="gear" class="mySection">
             <h2 class="waypoint" data-animation="slide-Down">Gear</h2>
-            <!-- Slideshow 3 -->
-
+       
             <div class="contenedor-slider waypoint" data-animation="slide-in-right">
                 <ul class="rslides" id="slider3">
                     <li><img src="img/slide_html5.png" alt=""></li>
                     <li><img src="img/slide_css.png" alt=""></li>
                     <li><img src="img/slide_js.png" alt=""></li>        
                     <li><img src="img/slide_webpack.jpg" alt=""></li>
-                    <li><img src="img/slider_gulp.jpg" alt=""></li>
+                    <li><img src="img/wp_logo.png" alt=""></li>
                     <li><img src="img/slide_bootstrap.png" alt=""></li>
                     <li><img src="img/slider_reactjs.jpg" alt=""></li>
                     <li><img src="img/slide_visualstudio.png" alt=""></li>
                     <li><img src="img/slide_nodejs.png" alt=""></li>
                 </ul>
             
-                <!-- Slideshow 3 Pager -->
                 <ul id="slider3-pager">
                     <li><a href="#"><img src="img/icon_html5.png" alt=""></a></li>
                     <li><a href="#"><img src="img/icon_css.png" alt=""></a></li>
@@ -329,7 +352,7 @@
                 </ul>
             </div>
 
-    </section>
+    </section> -->
 
     <section id="contact" class="footer mySection">
         <div  class="contenedor">
@@ -342,8 +365,6 @@
                 <nav class="sociales">
                     <ul>
                         <li><a id="profile-link" href="https://github.com/AlexFernando" target="_blank"><span>Github</span></a></li>
-                        <li><a href="http://facebook.com" target="_blank"><span>Facebook</span></a></li>
-                        <li><a href="http://twitter.com" target="_blank"><span>Twitter</span></a></li>
                         <li><a href="mailto:alex.fernando.801@gmail.com" target="_blank"><span>Gmail</span></a></li>
                     </ul>
                 </nav>  
@@ -354,7 +375,7 @@
 
     <footer>
         <div class="copyright">
-            <p id="copyright"><span>© 2022 <a href="mailto:alex.fernando.801@gmail.com">Alex Fernando.</a></span> Made in Perú</p>
+            <p id="copyright"><span>© 2024 <a href="mailto:alex.fernando.801@gmail.com">Alex Fernando.</a></span> Made in Perú</p>
         </div>
     </footer>
           <!-- CDN -->
