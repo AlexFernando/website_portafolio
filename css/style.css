@@ -807,7 +807,7 @@ section:nth-of-type(1) .bar .tag {
     background-size: cover;
     color: var(--claro);
     padding: 2rem 0;
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     text-align: center;
 }
 .footer .contenedor .elements {

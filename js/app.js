@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //scrollSpy
-(function() {
+/*(function() {
     'use strict';
 
     let sections = document.querySelectorAll('.mySection');
@@ -105,26 +105,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 document.querySelector('.active').setAttribute('class',' ');
                 document.querySelector('a[href*=' + section + ']').setAttribute('class', 'active');
-                
-                /*if(section === 'about' || section === 'gear') {
-                    myNavbar.classList.add('myBarColor');
-                    myNavbar.classList.remove('myBarColor2');
-                }
-                else if(section === 'projects') {
-                    myNavbar.classList.add('myBarColor2')
-                    myNavbar.classList.remove('myBarColor');
-                }
-                else {
-                    myNavbar.classList.remove('myBarColor');
-                    myNavbar.classList.remove('myBarColor2');
-                    
-                }*/
             }
         }
     };
 
 
+})();*/
+
+(function () {
+    'use strict';
+
+    const sections = document.querySelectorAll('.mySection');
+    let sectionOffsets = [];
+
+    function updateOffsets() {
+        sectionOffsets = Array.from(sections).map(section => ({
+            id: section.id,
+            offset: section.offsetTop
+        }));
+    }
+
+    function onScroll() {
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        const bottomOffset = window.innerHeight + scrollPosition;
+        const pageHeight = document.body.scrollHeight;
+
+        let currentSectionId = sectionOffsets[0].id;
+
+        for (let i = 0; i < sectionOffsets.length; i++) {
+            const sectionTop = sectionOffsets[i].offset;
+
+            // Add a buffer of 100px so it activates slightly earlier
+            if (scrollPosition + 100 >= sectionTop) {
+                currentSectionId = sectionOffsets[i].id;
+            }
+        }
+
+        // If we're at the bottom of the page, force the last section to be active
+        if (bottomOffset >= pageHeight - 2) {
+            currentSectionId = sectionOffsets[sectionOffsets.length - 1].id;
+        }
+
+        const currentActive = document.querySelector('.active');
+        if (currentActive) {
+            currentActive.classList.remove('active');
+        }
+
+        const newActive = document.querySelector(`a[href*="${currentSectionId}"]`);
+        if (newActive) {
+            newActive.classList.add('active');
+        }
+    }
+
+    updateOffsets();
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('resize', updateOffsets);
 })();
+
+
 
    // SCROLL ANIMATIONS
    function onScrollInit( items, elemTrigger ) {
@@ -153,3 +191,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
   });
 }
+
+ // Set current year in the footer
+ document.addEventListener('DOMContentLoaded', function () {
+    const yearSpan = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  });
